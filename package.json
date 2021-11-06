@@ -1,21 +1,30 @@
 {
-  "name": "react-vite-starter",
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "dev:host": "vite --host",
-    "build": "tsc && vite build",
-    "serve": "vite preview"
-  },
-  "dependencies": {
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
-  },
-  "devDependencies": {
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "@vitejs/plugin-react": "^1.0.0",
-    "typescript": "^4.3.2",
-    "vite": "^2.6.4"
-  }
+	"name": "react-vite-starter",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "vite",
+		"dev:host": "vite --host",
+		"build": "tsc && vite build",
+		"serve": "vite preview",
+		"release": "standard-version",
+		"release:path": "yarn release -- --release-as path"
+	},
+	"dependencies": {
+		"react": "^17.0.0",
+		"react-dom": "^17.0.0"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.0",
+		"@types/react-dom": "^17.0.0",
+		"@vitejs/plugin-react": "^1.0.0",
+		"cz-conventional-changelog": "3.3.0",
+		"standard-version": "^9.3.1",
+		"typescript": "^4.3.2",
+		"vite": "^2.6.4"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	}
 }
