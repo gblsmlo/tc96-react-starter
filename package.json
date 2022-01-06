@@ -1,6 +1,6 @@
 {
 	"name": "react-vite-starter",
-	"version": "0.0.2",
+	"version": null,
 	"scripts": {
 		"dev": "vite",
 		"dev:host": "vite --host",
