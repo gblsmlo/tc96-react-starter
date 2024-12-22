@@ -3,5 +3,5 @@ interface SampleComponentProps {
 }
 
 export function SampleComponent({ text }: SampleComponentProps) {
-	return <h1>{ text }</h1>
+	return <h1 className="text-gray-100">{text}</h1>
 }
