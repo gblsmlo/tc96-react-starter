@@ -1,3 +1,5 @@
+import { SampleComponent } from "./SampleComponent";
+
 export function App() {
-	return <h1 className="a">React vite starter</h1>
+	return <SampleComponent text="React vite starter" />
 }
