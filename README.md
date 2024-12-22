@@ -1,21 +1,20 @@
-# React TS Starter with Vite.js, TailwindCSS, Biome, and Commitizen ⚡✨
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+# React TS Starter with Vite.js, TailwindCSS and Biome ⚡✨
 
-This project is a starter template designed to kickstart the development of modern applications using **React**, **TypeScript**, **Vite.js**, **TailwindCSS**, **Biome**, and **Commitizen** for standardized commit messages.
+This project is a starter template designed to kickstart the development of modern applications using **React**, **TypeScript**, **Vite.js**, **TailwindCSS**, **Biome**, and **Commitlint** for standardized commit message formatting.
 
 ## Why choose this template? 🤔
 - **React with TypeScript**: The perfect combination for building scalable, reliable, and well-typed components.
 - **Vite.js**: A next-generation front-end build tool that provides lightning-fast development and optimized builds.
 - **TailwindCSS**: A utility-first CSS framework that simplifies styling and ensures design consistency.
 - **Biome**: A powerful tool for formatting, linting, and ensuring clean, maintainable code.
-- **Commitizen**: Facilitates standardized and meaningful commit messages, enhancing collaboration and project maintainability.
+- **Commitlint**: A tool to enforce commit message conventions, ensuring that all commit messages follow a consistent and standardized format.
 
 ## Key Features 🚀
 - **Fully configured setup for working with TypeScript**.
 - **Superfast development and build process powered by Vite.js**.
 - **Modern and responsive styling with TailwindCSS pre-integrated**.
 - **Integrated Biome for automated code formatting and linting**.
-- **Commitizen setup for standardized commit messages**.
+- **Commitlint setup for enforcing commit message standards**.
 - **Development scripts optimized for a smooth workflow**.
 
 Feel free to clone, customize, and use this as the foundation for your next project! 🎉
@@ -23,7 +22,7 @@ Feel free to clone, customize, and use this as the foundation for your next proj
 ## How to Get Started 🛠️
 1. **Clone the repository**:
     ```bash
-    git clone <repository-URL>
+    git clone https://github.com/gabrielmelo/react-vite-starter
     cd <repository-name>
     ```
 2. **Install dependencies**:
@@ -34,18 +33,28 @@ Feel free to clone, customize, and use this as the foundation for your next proj
     ```bash
     npm run dev
     ```
-4. **Set up Commitizen**:
-    ```bash
-    npx commitizen init cz-conventional-changelog --save-dev --save-exact
-    ```
+4. **Set up Commitlint**:
+    - Install Commitlint dependencies:
+      ```bash
+      npm install --save-dev @commitlint/config-conventional @commitlint/cli
+      ```
+    - Create a `commitlint.config.js` file with the following content:
+      ```js
+      module.exports = {
+        extends: ['@commitlint/config-conventional']
+      };
+      ```
 
-    This command initializes Commitizen with the [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog) adapter, which enforces a standardized commit message format.
+5. **Set up a pre-commit hook** (optional but recommended):
+    - Use **Husky** to ensure commit messages are linted before each commit.
+    ```bash
+    npx husky add .husky/pre-commit "npx --no-install commitlint --edit ${1}"
+    ```
 
 ## Usage Tips 💡
-- **Making Commits**: Instead of using `git commit`, use `npm run commit` to ensure your commit messages follow the standardized format.
-    ```bash
-    npm run commit
-    ```
+- **Making Commits**: Ensure your commit messages follow the conventional format. For example:
+  - `feat: add new feature`
+  - `fix: resolve issue with component rendering`
 - **Building for Production**:
     ```bash
     npm run build
@@ -55,3 +64,9 @@ Feel free to clone, customize, and use this as the foundation for your next proj
     npm run lint
     npm run format
     ```
+
+You're now ready to build amazing, high-performance interfaces with clean and maintainable code! 💻✨
+
+---
+
+Let me know if you need further changes or additions! 😊

@@ -1,5 +1,9 @@
+import { SampleComponent } from './SampleComponent'
+
 export function App() {
 	return (
-		<h1>React vite starter</h1>
+		<div className="h-screen bg-gray-950 p-10">
+			<SampleComponent text="react-ts vite starter" />
+		</div>
 	)
 }
