@@ -1,5 +1,3 @@
 export function App() {
-	return (
-		<h1>React vite starter</h1>
-	)
+	return <h1 className="a">React vite starter</h1>
 }
