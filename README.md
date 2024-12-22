@@ -1,4 +1,5 @@
 # React TS Starter with Vite.js, TailwindCSS, Biome, and Commitizen ⚡✨
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 This project is a starter template designed to kickstart the development of modern applications using **React**, **TypeScript**, **Vite.js**, **TailwindCSS**, **Biome**, and **Commitizen** for standardized commit messages.
 
