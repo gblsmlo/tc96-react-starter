@@ -2,9 +2,9 @@ name: Starter CI
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   pull_request:
-    branches: [main]
+    branches: [ main ]
 
 jobs:
   ci:
@@ -16,18 +16,14 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '22.x'
-        cache: 'pnpm'
-
-		- run: npm pkg delete scripts.prepare
-
-		- name: Install dependencies
-			run: pnpm i --frozen-lockfile
-
-		- name: Linting
-    	run: pnpm lint:ci
-
-		- name: Type Checking
-			run: pnpm type-check
-
-		- name: Tests
-			run: pnpm test:ci
+        cache: 'npm'
+    - name: Delete prepare script
+      run: npm pkg delete scripts.prepare
+    - name: Install dependencies
+      run: npm install --frozen-lockfile
+    - name: Linting
+      run: npm run lint:ci
+    - name: Type Checking
+      run: npm run type-check
+    - name: Tests
+      run: npm run test:ci
