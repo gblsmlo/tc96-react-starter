@@ -1,11 +1,11 @@
 {
 	"name": "react-ts-starter",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
-		"lint": "bunx biome check --write .",
+		"lint": "biome check --write --staged .",
 		"serve": "vite preview",
 		"prepare": "husky"
 	},
