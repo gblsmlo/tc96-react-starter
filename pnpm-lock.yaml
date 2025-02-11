@@ -11,6 +11,9 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.0.6
         version: 4.0.6(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
+      '@tc96/biome-config':
+        specifier: ^0.0.5
+        version: 0.0.5(@biomejs/biome@1.9.4)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -605,6 +608,11 @@ packages:
     resolution: {integrity: sha512-O25vZ/URWbZ2JHdk2o8wH7jOKqEGCsYmX3GwGmYS5DjE4X3mpf93a72Rn7VRnefldNauBzr5z2hfZptmBNtTUQ==}
     peerDependencies:
       vite: ^5.2.0 || ^6
+
+  '@tc96/biome-config@0.0.5':
+    resolution: {integrity: sha512-V54xgLbeaUU1x+wMfLAEkRBJbQOicnehbIksfFik6xqAGK5fBi1IN9/I4lCXQV9Kwh08j097kSxd/W6TJtLFFg==}
+    peerDependencies:
+      '@biomejs/biome': 1.9.4
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -1689,6 +1697,10 @@ snapshots:
       lightningcss: 1.29.1
       tailwindcss: 4.0.6
       vite: 6.1.0(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0)
+
+  '@tc96/biome-config@0.0.5(@biomejs/biome@1.9.4)':
+    dependencies:
+      '@biomejs/biome': 1.9.4
 
   '@types/babel__core@7.20.5':
     dependencies:
