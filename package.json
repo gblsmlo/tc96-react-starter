@@ -1,6 +1,6 @@
 {
-	"name": "react-ts-starter",
-	"version": "0.1.1",
+	"name": "@tc96/react-starter",
+	"version": "0.2.1",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
