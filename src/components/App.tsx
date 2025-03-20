@@ -1,7 +1,7 @@
 export function App() {
 	return (
 		<div className="h-screen bg-neutral-900 p-10">
-			<div className='flex h-full flex-col items-center justify-center gap-2 text-center text-amber-400'>
+			<div className="flex h-full flex-col items-center justify-center gap-2 text-center text-amber-400">
 				<h1 className="font-extrabold">
 					<span className="text-2xl lg:text-6xl">tc</span>
 					<span className="text-2xl lg:text-4xl">⚡</span>
