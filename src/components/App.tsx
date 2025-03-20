@@ -1,9 +1,9 @@
-import { SampleComponent } from './SampleComponent'
+import { Hero } from './Hero'
 
 export function App() {
 	return (
-		<div className="h-screen bg-neutral-950 p-10">
-			<SampleComponent text="@tc96/react-starter" />
+		<div className="h-screen bg-primary p-10">
+			<Hero />
 		</div>
 	)
 }
