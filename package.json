@@ -1,17 +1,17 @@
 {
 	"name": "@tc96/react-starter",
-	"version": "0.5.0",
+	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
+		"start": "vite preview",
 		"lint": "biome check --fix",
 		"lint:staged": "biome check --staged --fix",
 		"lint:ci": "biome ci",
-		"serve": "vite preview",
 		"prepare": "husky",
+		"test": "echo 'No error found'",
 		"type-check": "tsc --noEmit",
-		"test:ci": "echo 'No error found'",
 		"check:updates": "npm-check-updates -i --color"
 	},
 	"dependencies": {
@@ -34,6 +34,14 @@
 		"npm-check-updates": "^17.1.15",
 		"typescript": "~5.8.2",
 		"vite": "^6.2.2"
+	},
+	"lint-staged": {
+		"src/**/*.{ts,tsx,js,jsx}": [
+			"biome check --write"
+		],
+		"src/**/*.{json}": [
+			"biome format --write"
+		]
 	},
 	"sripts": {}
 }
