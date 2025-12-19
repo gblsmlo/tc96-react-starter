@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		/* Base resolution + module */
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"baseUrl": ".",
+
+
+		/* Common behavior */
+		"allowImportingTsExtensions": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"skipLibCheck": true,
+
+		/* Strictness */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+
+		/* Path aliases (require baseUrl) */
+		"paths": {
+			"@views/*": ["src/views/*"],
+			"@app/*": ["src/app/*"]
+		}
+	}
+}
